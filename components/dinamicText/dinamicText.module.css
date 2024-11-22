@@ -1,0 +1,11 @@
+.dinamic{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.phrase{
+    font-size: 48px;
+    line-height: 65px;
+    color: #313131;
+    text-align: center;
+}

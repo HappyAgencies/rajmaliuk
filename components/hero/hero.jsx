@@ -16,7 +16,7 @@ export const Hero = () => {
         </div>
         <div className={styles.partners}>
             <Image src="/assets/imgs/upwork.png" width={122} height={43} alt=""/>
-            <Image src="/assets/imgs/clutch.png" width={88} height={25} alt=""/>
+            <Image src="/assets/imgs/clutch.png" width={100} height={25} alt=""/>
             <Image src="/assets/imgs/hubSpot.png" width={110} height={38} alt="" />
             <Image src="/assets/imgs/googlePartner.png" width={83} height={34} alt="" />
             <Image src="/assets/imgs/make.png" width={159} height={19} alt="" />
