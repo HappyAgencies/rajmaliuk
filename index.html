@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Líneas Perpendiculares</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #FFFFFF;
+      overflow: hidden;
+      cursor: none;
+    }
+    .line {
+      position: absolute;
+      border: 1px dashed rgb(255, 0, 234);
+    }
+    .horizontal {
+      height: 2px;
+      width: 100%;
+    }
+    .vertical {
+      width: 2px;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="line horizontal" id="horizontal"></div>
+  <div class="line vertical" id="vertical"></div>
+  <script>
+    const horizontalLine = document.getElementById('horizontal');
+    const verticalLine = document.getElementById('vertical');
+    document.addEventListener('mousemove', (event) => {
+      const x = event.clientX;
+      const y = event.clientY;
+      horizontalLine.style.top = `${y}px`;
+      verticalLine.style.left = `${x}px`;
+    });
+  </script>
+</body>
+</html>

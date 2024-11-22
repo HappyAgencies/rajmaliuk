@@ -1,0 +1,36 @@
+.heroQuote{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+}
+.heroTwoColumns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:78px;
+    margin-top: 50px;
+}
+.partners{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.ariel{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37.5px;
+}
+.heroSubtitle{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 12px;
+}
+.heroSubtitleStrong{
+    font-weight: 500;
+}
+.heroRightColumn{
+    display: flex;
+    flex-direction: column;
+    gap:35px ;
+    text-align: left;
+}
