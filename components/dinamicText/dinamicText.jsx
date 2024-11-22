@@ -8,6 +8,7 @@ const DinamicText = () => {
     <div className={styles.dinamic}>
         <h2 className={`${styles.phrase} ${Mont.className}`} >I help companies solve complex tachnical & GTM challenges</h2>
     </div>
+    
   )
 }
 
