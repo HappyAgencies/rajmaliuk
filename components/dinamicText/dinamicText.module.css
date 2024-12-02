@@ -15,9 +15,10 @@
     
 
 }
-.phrase{
+.phrase {
     font-size: 48px;
     line-height: 65px;
-    color: #313131;
+    color: #313131; /* Color gris oscuro por defecto */
     text-align: center;
+    display: inline-block;
 }
