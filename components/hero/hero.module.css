@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left:78px;
+    margin-left:70px;
 }
 .partners {
     display: flex;
@@ -40,6 +40,10 @@
 .left_colum_father{
     margin-top : 200px;
     
+}
+.heroText{
+    max-width: 730px;
+    width: auto;
 }
 
 .imageFather img {
