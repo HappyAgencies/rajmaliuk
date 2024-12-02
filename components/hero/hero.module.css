@@ -8,14 +8,15 @@
     flex-direction: row;
     justify-content: space-between;
     margin-left:78px;
-    margin-top: 50px;
 }
-.partners{
+.partners {
     display: flex;
     justify-content: flex-start;
+    align-items: center; 
     gap: 40px;
-    margin-top:47px;
+    margin-top: 47px;
 }
+
 .ariel{
     font-size: 30px;
     font-weight: 400;
@@ -36,3 +37,15 @@
     gap:35px ;
     text-align: left;
 }
+.left_colum_father{
+    margin-top : 226px;
+    
+}
+
+.imageFather img {
+    max-width: 685px;
+    height: auto;
+    max-height: 744px;
+    margin-right: 19px;
+}
+

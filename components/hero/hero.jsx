@@ -8,9 +8,12 @@ import styles from './hero.module.css';
 export const Hero = () => {
   return (
     <div className={styles.heroTwoColumns}>
-        <div>
+        <div className ={styles.left_colum_father}>
+          <div className ={styles.heroText}>
         <h1 className={`${styles.heroQuote} ${Mont.className}`}>“Empowering Your Business Through Expert Consultancy”</h1>
-        <div>
+        
+        </div>
+        <div className ={styles.heroParagraph}>
             <p className={`${styles.ariel} ${allura.className}`}>Ariel Rajmaliuk</p>
             <p className={`${styles.heroSubtitle} ${Mont.className}`}>CEO @happyagancies & Fractional <span className={`${styles.heroSubtitleStrong} ${Mont.className}`}>CTO/CMO</span></p>
         </div>
@@ -22,7 +25,7 @@ export const Hero = () => {
             <Image src="/assets/imgs/make.png" width={159} height={19} alt="" />
         </div>
         </div>
-        <div>
+        <div className ={styles.imageFather}>
             <Image src="/assets/imgs/man.png" width={709} height={877} alt=""/>
         </div>
     </div>
