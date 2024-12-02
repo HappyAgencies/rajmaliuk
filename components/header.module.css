@@ -8,12 +8,11 @@
     font-size:30px;
     line-height: 37.5px;
 }
-.consultation{
-    color:#0363FF;
-    text-decoration: underline;
+.consultation {
+    color: #0363FF;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 21.94px;
+    font-weight: 600;
+    line-height: normal;
     text-align: right;
-    
-}
+    text-decoration: underline;
+    text-underline-offset: 4.5px; }
