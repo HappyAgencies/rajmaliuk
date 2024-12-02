@@ -38,14 +38,45 @@
     text-align: left;
 }
 .left_colum_father{
-    margin-top : 226px;
+    margin-top : 200px;
     
 }
 
 .imageFather img {
-    max-width: 685px;
+    max-width: 600px;
     height: auto;
     max-height: 744px;
     margin-right: 19px;
+}
+
+
+.scrollContainer {
+    margin-top: 110px;
+    writing-mode: vertical-rl; 
+    display: flex;
+
+}
+
+.scrollContainer p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.line {
+    margin: auto;
+    width: 2px; 
+    height: 101.178px;
+    background: linear-gradient(900deg, #FFF 0%, #000 100%);
+    margin-top: 5px;
+}
+.cto {
+color: #FFF;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+line-height: 11.899px;
 }
 
