@@ -1,3 +1,4 @@
+'use client'
 import styles from './header.module.css';
 import { allura } from '../app/fonts/fonts.js';
 import { Mont } from '../app/fonts/fonts.js';
