@@ -2,6 +2,18 @@
     height: 100vh;
     display: flex;
     align-items: center;
+
+}
+
+.dinamicContenedor{
+    max-width: 959px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+
+    
+
 }
 .phrase{
     font-size: 48px;
