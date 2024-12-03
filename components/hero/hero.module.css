@@ -8,7 +8,14 @@
     flex-direction: row;
     justify-content: space-between;
     margin-left:70px;
+    max-width: 1440px;
 }
+@media (min-width: 1441px) {
+    .heroTwoColumns {
+        margin: 0px auto;
+    }
+  }
+
 .partners {
     display: flex;
     justify-content: flex-start;
