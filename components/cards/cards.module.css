@@ -1,7 +1,16 @@
+.cardSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
 .cardsSection{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    max-width: 1440px;
 }
 .bar1{
     width: 314px;
@@ -11,7 +20,7 @@
 .bar2{
     width: 314px;
     height: 4px;
-    background: linear-gradient(180deg, #ffffff 0%, #000000 100%);
+    background: linear-gradient(270deg, #000000 0%, #ffffff 100%);
 }
 .brands{
     font-size: 48px;
@@ -20,15 +29,21 @@
 }
 .cardsContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     margin-top: 100px;
+    width: 80%;
+    margin: 0px auto;
+    max-width: 1440px;
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 .card{
     display: flex;
     flex-direction: column;
     padding: 40px;
     justify-content: space-between;
+    border: 1px solid #8C8C8C;
 }
 .cardTopRow{
     display: flex;
@@ -50,11 +65,22 @@
     line-height: 30px;
     color: #ffffff;
     font-weight: 300;
+    width: 75%;
 }
 .cardYear{
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
+    width: 20%;
+}
+.imageDiv{
+    height: 50vh;
+    width: 100%;
+}
+.cardBottomRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
