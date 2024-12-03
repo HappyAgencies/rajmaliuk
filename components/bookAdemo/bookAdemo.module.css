@@ -73,7 +73,7 @@ margin: 30px;
 
   .horizontalLIne{
     margin-right: 79px ;
-    border-top: 1px solid #818181;; /* Agregamos un borde superior con el color deseado */
+    border-top: 1px solid #818181;; 
     
 }
 .question{
@@ -107,9 +107,9 @@ line-height: 30px;
 
 }
 .plusImage {
-    transition: transform 0.3s ease; /* Suaviza la transición de rotación */
+    transition: transform 0.3s ease; 
   }
   
   .rotated {
-    transform: rotate(-45deg); /* Gira la imagen 45 grados en sentido antihorario */
+    transform: rotate(-45deg); 
   }
