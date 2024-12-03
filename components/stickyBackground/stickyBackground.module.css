@@ -1,14 +1,14 @@
 .stickyWrapper {
     position: relative;
-    height: 150vh; 
-    overflow: hidden;
+    height: 200vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
   }
   
   .sticky {
-    position: absolute; 
-    top: 0%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    position: sticky;
+    top: 25%; 
     text-align: center;
     z-index: 2; 
   }
@@ -24,5 +24,16 @@
     background-position: center;
     z-index: 1; 
   }
+  .success{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 70px;
+    margin-top: 25vh;
+  }
+  .worldwide{
+    font-size: 64px;
+  }
+  
+  
   
   
