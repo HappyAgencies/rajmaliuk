@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "../components/header";
 import { Hero } from "../components/hero/hero";
 import DinamicText from "../components/dinamicText/dinamicText";
+import Experience from "../components/experience/experience";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Header/>
       <Hero/>
       <DinamicText></DinamicText>
+      <Experience/>
       </div>
     </>
   );
