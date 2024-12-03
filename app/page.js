@@ -6,6 +6,7 @@ import DinamicText from "../components/dinamicText/dinamicText";
 import Experience from "../components/experience/experience";
 import Cards from "../components/cards/cards";
 import StickyBackground from "../components/stickyBackground/stickyBackground";
+import BookaDemo from "../components/bookAdemo/bookaDemo";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Experience/>
       <Cards/>
       <StickyBackground/>
+      <BookaDemo></BookaDemo>
       </div>
     </>
   );
