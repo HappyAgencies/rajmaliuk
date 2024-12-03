@@ -1,33 +1,34 @@
-'use client'
+"use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import styles from './dinamicText.module.css';
-import { Mont } from '../../app/fonts/fonts';
+import React, { useState, useEffect, useRef } from "react";
+import styles from "./dinamicText.module.css";
+import { Mont } from "../../app/fonts/fonts";
 
 const DinamicText = () => {
   const fullText = "I help companies solve complex technical & GTM challenges";
   const words = fullText.split(" ");
   const [scrollPercentage, setScrollPercentage] = useState(0);
-  const textRef = useRef(null); 
+  const textRef = useRef(null);
 
   const handleScroll = () => {
     if (textRef.current) {
-      const rect = textRef.current.getBoundingClientRect(); 
+      const rect = textRef.current.getBoundingClientRect();
       const sectionTop = rect.top;
       const windowHeight = window.innerHeight;
 
       if (sectionTop <= windowHeight && sectionTop + rect.height >= 0) {
-        const scrollPercent = ((windowHeight - sectionTop) / windowHeight) * 100;
+        const scrollPercent =
+          ((windowHeight - sectionTop) / windowHeight) * 100;
         setScrollPercentage(scrollPercent);
       }
     }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -41,8 +42,8 @@ const DinamicText = () => {
             <span
               key={index}
               style={{
-                color: index < wordsToDisplay ? 'white' : '#313131', // Cambiar el color en base al porcentaje
-                transition: 'color 0.3s ease-out'
+                color: index < wordsToDisplay ? "white" : "#313131", // Cambiar el color en base al porcentaje
+                transition: "color 0.3s ease-out",
               }}
             >
               {word}{" "}
