@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+    max-width: 1440px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: #0363FF;
+}
+.button{
+    color: #0363FF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+}
