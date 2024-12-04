@@ -90,4 +90,11 @@ font-style: normal;
 font-weight: bold;
 line-height: 11.899px;
 }
-
+@media(max-width:769px){
+    .imageFather{
+        display: none;
+    }
+    .scrollContainer{
+        display: none;
+    }
+}
