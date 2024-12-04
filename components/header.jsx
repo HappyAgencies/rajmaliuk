@@ -5,7 +5,7 @@ import { Mont } from '../app/fonts/fonts.js';
 
 export default function Header() {
   return (
-    <div className={styles['header-div']}>
+    <div id='header' className={styles['header-div']}>
       <a href="" className={`${styles.name} ${allura.className}`}>Ariel Rajmaliuk</a>
       <a className={`${styles.consultation} ${Mont.className}`} href="">Schedule a consultation</a>
     </div>

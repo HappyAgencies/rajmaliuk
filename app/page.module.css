@@ -3,3 +3,8 @@
     margin-top: 0px;
     padding-top:38px;
 }
+@media(max-width:769){
+    .mobileBackground{
+        background-image: url('../public/assets/imgs/Gradient.png');
+    }
+}
