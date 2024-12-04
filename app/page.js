@@ -14,8 +14,10 @@ export default function Home() {
   return (
     <>
       <div className={styles.background}>
+      <div className={styles.mobileBackground}>
       <Header/>
       <Hero/>
+      </div>
       <DinamicText></DinamicText>
       <Experience/>
       <Cards/>
