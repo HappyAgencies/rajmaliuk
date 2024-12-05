@@ -22,3 +22,14 @@
     text-align: center;
     display: inline-block;
 }
+@media(max-width:768px){
+    .dinamic{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .phrase{
+        font-size:30px;
+        line-height: 36px;
+    }
+}
