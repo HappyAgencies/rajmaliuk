@@ -11,7 +11,7 @@ export const Hero = () => {
         <div className ={styles.left_colum_father}>
           <div className ={styles.heroText}>
         <h1 className={`${styles.heroQuote} ${Mont.className}`}>“Empowering Your Business Through Expert Consultancy”</h1>
-        
+        <a className={`${Mont.className} ${styles.buttonMobile}`} href="">Schedule a consultation</a>
         </div>
         <div className ={styles.heroParagraph}>
             <p className={`${styles.ariel} ${allura.className}`}>Ariel Rajmaliuk</p>

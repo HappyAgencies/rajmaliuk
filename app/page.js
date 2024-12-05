@@ -8,7 +8,7 @@ import Cards from "../components/cards/cards";
 import StickyBackground from "../components/stickyBackground/stickyBackground";
 import BookaDemo from "../components/bookAdemo/bookaDemo";
 import Footer from "../components/footer/footer";
-
+import Carousel from "../components/carousel/carousel";
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       <DinamicText></DinamicText>
       <Experience/>
       <Cards/>
+      <Carousel/>
       <StickyBackground/>
       <BookaDemo></BookaDemo>
       <Footer/>

@@ -7,4 +7,7 @@
     .mobileBackground{
         background-image: url('../public/assets/imgs/Gradient.png');
     }
+    .background{
+        padding-top:0px;
+    }
 }

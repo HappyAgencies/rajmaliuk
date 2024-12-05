@@ -88,11 +88,27 @@ font-style: normal;
 font-weight: bold;
 line-height: 11.899px;
 }
+.buttonMobile{
+    display: none;
+}
 @media(max-width:769px){
     .imageFather{
         display: none;
     }
     .scrollContainer{
         display: none;
+    }
+    .heroParagraph{
+        display: none;
+    }
+    .buttonMobile{
+        display: block;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        text-align: center;
+        margin-top: 48px;
+        font-size: 16px;
+        line-height: 19.5px;
+        font-weight: 500;
     }
 }

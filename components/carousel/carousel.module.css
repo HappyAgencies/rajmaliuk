@@ -1,0 +1,35 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carouselTopRow,
+  .carouselBottomRow {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carouselTrack {
+    display: flex;
+    width: 100%; /* Hacer que el track ocupe todo el ancho de la pantalla */
+    flex: 0 0 auto;
+    gap: 30px;
+  }
+  
+  .leftGradient,
+  .rightGradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent); /* Gradiente invertido */
+  }
+  
