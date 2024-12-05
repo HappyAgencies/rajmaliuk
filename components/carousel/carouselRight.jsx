@@ -1,8 +1,8 @@
 'use client'
 import Image from 'next/image';
-import styles from './carousel.module.css';
+import styles from './carouselRight.module.css';
 
-const Carousel = () => {
+const CarouselRight = () => {
   const slides = [
     '/assets/imgs/castcapital.png',
     '/assets/imgs/nexafin.png',
@@ -40,4 +40,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselRight;

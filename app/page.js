@@ -8,6 +8,8 @@ import Cards from "../components/cards/cards";
 import StickyBackground from "../components/stickyBackground/stickyBackground";
 import BookaDemo from "../components/bookAdemo/bookaDemo";
 import Footer from "../components/footer/footer";
+import  Carousel  from "../components/carousel/carousel";
+import CarouselRight from "../components/carousel/carouselRight";
 
 
 export default function Home() {
@@ -21,6 +23,10 @@ export default function Home() {
       <DinamicText></DinamicText>
       <Experience/>
       <Cards/>
+      <Carousel/>
+      <br></br>
+      <CarouselRight/>
+
       <StickyBackground/>
       <BookaDemo></BookaDemo>
       <Footer/>

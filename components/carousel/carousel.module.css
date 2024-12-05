@@ -1,0 +1,36 @@
+.carousel_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px;
+  object-fit: contain;
+  margin-right: 90px;
+  margin-left: 90px;
+
+}
+
+.carousel {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  animation-iteration-count: infinite;
+  animation: scrollRight 100s infinite linear;
+  position: relative;
+}
+
+.carousel_item {
+  flex-shrink: 0; /* Evita que las imágenes se compriman */
+  margin: 0 10px; /* Añade espacio entre las imágenes si lo necesitas */
+  
+}
+
+@keyframes scrollRight {
+
+  100% {
+    transform: translateX(-100%); /* Mueve las imágenes completamente hacia la izquierda */
+  }
+}
