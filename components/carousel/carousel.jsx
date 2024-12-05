@@ -39,22 +39,22 @@ const Carousel = () => {
     <div className={style.carousel}>
       <div className={style.carouselTopRow}>
         <div className={style.carouselTrack} ref={trackRef}>
-          <Image src="/assets/imgs/castcapital.png" width={188} height={160} />
-          <Image src="/assets/imgs/nexafin.png" width={188} height={160} />
-          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} />
-          <Image src="/assets/imgs/castcapital.png" width={188} height={160} />
-          <Image src="/assets/imgs/nexafin.png" width={188} height={160} />
-          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} />
+          <Image src="/assets/imgs/castcapital.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/nexafin.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/castcapital.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/nexafin.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} alt="" />
         </div>
       </div>
       <div className={style.carouselBottomRow}>
         <div className={style.carouselTrack}>
-          <Image src="/assets/imgs/castcapital.png" width={188} height={160} />
-          <Image src="/assets/imgs/nexafin.png" width={188} height={160} />
-          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} />
-          <Image src="/assets/imgs/castcapital.png" width={188} height={160} />
-          <Image src="/assets/imgs/nexafin.png" width={188} height={160} />
-          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} />
+          <Image src="/assets/imgs/castcapital.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/nexafin.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/castcapital.png" width={188} height={160} alt=""/>
+          <Image src="/assets/imgs/nexafin.png" width={188} height={160} alt="" />
+          <Image src="/assets/imgs/supertekbox.png" width={188} height={160} alt="" />
         </div>
       </div>
     </div>

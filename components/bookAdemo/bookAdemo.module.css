@@ -113,3 +113,8 @@ line-height: 30px;
   .rotated {
     transform: rotate(-45deg); 
   }
+@media(max-width:768px){
+  .container{
+    display: none;
+  }
+}
