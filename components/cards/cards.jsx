@@ -35,7 +35,7 @@ const Cards = () => {
               <p className={styles.cardBrand}>MTC</p>
               <p className={styles.brandSubtitle}>Outsourcing Platform</p>
             </div>
-            <Image src="/assets/imgs/mtc.png" alt="" width={58} height={40} />
+            <Image className={styles.mtc} src="/assets/imgs/mtc.png" alt="" width={58} height={40} />
           </div>
           <div className={styles.imageDiv}>
             {hoveredCard === 1 && (
@@ -69,7 +69,7 @@ const Cards = () => {
               <p className={styles.cardBrand}>SuperTek</p>
               <p className={styles.brandSubtitle}>Crypto mining technical services</p>
             </div>
-            <Image src="/assets/imgs/supertek.png" alt="" width={250} height={30} />
+            <Image src="/assets/imgs/supertek.png" className={styles.supertek} alt="" width={250} height={30} />
           </div>
           <div className={styles.imageDiv}>
             {hoveredCard === 2 && (

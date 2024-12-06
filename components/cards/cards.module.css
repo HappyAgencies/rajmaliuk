@@ -93,6 +93,8 @@
         font-size: 30px;
         line-height: 45px;
         font-weight: 500;
+        text-align: center;
+        width: 90%;
     }
     .imageDiv{
         display:none;
@@ -110,6 +112,27 @@
     }
     .cardYear{
         width: 100%;
+    }
+    .cardBrand{
+        font-size:28px;
+        font-weight: 500;
+        line-height: 34px;
+    }
+    .brandSubtitle{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+    .mtc{
+        height: 40px;
+        width: 58px;
+    }
+    .supertek{
+        width: 137px;
+        height: 28px;
+    }
+    .card{
+        padding:20px;
     }
 }
 
