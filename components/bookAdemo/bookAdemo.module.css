@@ -164,5 +164,9 @@ display: block;  }
 }
 .container {
  width: 100%;
+
+}
+.horizontalLIne{
+  width: calc(90%);
 }
 }
