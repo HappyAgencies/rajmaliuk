@@ -1,7 +1,6 @@
 .container {
   margin-left: 82px;
   max-width: 1440px;
-  height: 100vh;
 }
 @media (min-width: 1441px) {
     .container {
