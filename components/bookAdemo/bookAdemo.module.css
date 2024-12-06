@@ -157,7 +157,7 @@ display: block;  }
 }
 
 .horizontalLIne{
-  width: 380px;
+  margin: 0px auto;  
 }
 .plusImage{
   margin-right: 40px;
