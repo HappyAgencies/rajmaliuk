@@ -6,7 +6,7 @@ const Carousel = () => {
   const slides = [
     '/assets/imgs/castcapital.png',
     '/assets/imgs/nexafin.png',
-    '/assets/imgs/supertekBox.png',
+    '/assets/imgs/supertek.png',
     // tus imágenes o contenido
   ];
 
