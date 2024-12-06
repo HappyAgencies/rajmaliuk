@@ -111,6 +111,7 @@ line-height: 11.899px;
     }
     .heroTwoColumns{
         margin-left: 0px;
+
     }
     .heroParagraph{
         display: none;
@@ -136,9 +137,11 @@ line-height: 11.899px;
         margin-right: auto;
         align-items: center;
         margin-top:100px;
+        margin-bottom:30px;
     }
     .heroQuote{
         font-size: 40px;
         line-height: 60px;
+        text-align: center;
     }
 }

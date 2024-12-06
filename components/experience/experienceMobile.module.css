@@ -1,0 +1,77 @@
+/* General styles for the experience section */
+.experience {
+    background-image: url('../../public/assets/imgs/experience-module-bg.png');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  /* Text styles */
+  .experienceText {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 65px;
+    margin-bottom: 48px;
+  }
+  
+  .unlock {
+    color: #0363FF;
+  }
+  
+  /* List styles */
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Category list items */
+  .listItem {
+    color: #646464;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+  }
+  
+  .listItem:hover {
+    color: #ffffff;
+  }
+  
+  /* Category name hover effect */
+  .categoryName {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  /* Description text that appears when a category is clicked */
+  .description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .experienceText {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  
+    .listItem {
+      font-size: 24px;
+    }
+  
+    /* Adjust the layout for mobile */
+    .list {
+      gap: 24px;
+    }
+    
+    /* Ensure description text appears directly below the clicked category */
+    .rightColumn {
+      display: none; /* Hide the right column on mobile */
+    }
+  }
+  

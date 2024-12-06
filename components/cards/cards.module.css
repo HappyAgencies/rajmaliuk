@@ -86,6 +86,31 @@
     .cardsContainer{
         flex-direction: column;
     }
+    .bar1, .bar2{
+        display: none;
+    }
+    .brands{
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+    .imageDiv{
+        display:none;
+    }
+    .cardBottomRow{
+        flex-direction: column;
+        gap:30px;
+    }
+    .cardText{
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .cardYear{
+        width: 100%;
+    }
 }
 
 

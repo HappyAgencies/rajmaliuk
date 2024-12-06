@@ -10,7 +10,7 @@ import BookaDemo from "../components/bookAdemo/bookaDemo";
 import Footer from "../components/footer/footer";
 import  Carousel  from "../components/carousel/carousel";
 import CarouselRight from "../components/carousel/carouselRight";
-
+import ExperienceMobile from "../components/experience/experienceMobile";
 
 export default function Home() {
   return (
@@ -21,7 +21,8 @@ export default function Home() {
       <Hero/>
       </div>
       <DinamicText></DinamicText>
-      <Experience/>
+      <Experience className={styles.xpDesktop}/>
+      <ExperienceMobile className={styles.xpMobile}/>
       <Cards/>
       <Carousel/>
       <br></br>

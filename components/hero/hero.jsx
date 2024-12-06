@@ -42,7 +42,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className={styles.scrollDiv}>
-        <span>scroll</span>
+        <span>Scroll</span>
         <Image width={20} height={20} src="/assets/imgs/down-arrow1.png" alt="Down Arrow" />
       </div>
     </>
