@@ -39,4 +39,7 @@
         align-items: center;
         padding-top:115px;
     }
+    .name{
+        margin-bottom: 10px;
+    }
 }

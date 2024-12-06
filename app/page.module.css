@@ -9,6 +9,7 @@
 @media(max-width:769){
     .mobileBackground{
         background-image: url('../public/assets/imgs/Gradient.png');
+        height: 100vh;
     }
     .background{
         padding-top:0px;

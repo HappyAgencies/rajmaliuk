@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import { Mont, allura } from '../../app/fonts/fonts';
 import styles from './hero.module.css';
+import stylesCarousel from './carousel.module.css';
+import CarouselHero from './heroCarousel';
 
 export const Hero = () => {
   return (
@@ -41,8 +43,11 @@ export const Hero = () => {
           <Image src="/assets/imgs/man.png" width={709} height={877} alt="Man Illustration" />
         </div>
       </div>
+      <div className={stylesCarousel.heroCarousel}>      
+        <CarouselHero></CarouselHero>
+      </div>
       <div className={styles.scrollDiv}>
-        <span>Scroll</span>
+        <span className={styles.scrollDivspan}>Scroll</span>
         <Image width={20} height={20} src="/assets/imgs/down-arrow1.png" alt="Down Arrow" />
       </div>
     </>
