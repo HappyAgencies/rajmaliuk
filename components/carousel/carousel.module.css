@@ -1,3 +1,4 @@
+
 .carousel_container {
   display: flex;
   flex-direction: column;
@@ -24,14 +25,14 @@
 }
 
 .carousel_item {
-  flex-shrink: 0; /* Evita que las imágenes se compriman */
-  margin: 0 10px; /* Añade espacio entre las imágenes si lo necesitas */
+  flex-shrink: 0; 
+  margin: 0 10px;
   
 }
 
 @keyframes scrollRight {
 
   100% {
-    transform: translateX(-100%); /* Mueve las imágenes completamente hacia la izquierda */
+    transform: translateX(-100%); 
   }
 }

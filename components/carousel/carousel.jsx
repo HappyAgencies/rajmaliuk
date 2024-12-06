@@ -32,11 +32,14 @@ const Carousel = () => {
   }
 
   return (
+    <div className={styles.carousel_container_father}>
     <div className={styles.carousel_container}>
       <div className={styles.carousel}>
         {images}
       </div>
     </div>
+    </div>
+
   );
 };
 
