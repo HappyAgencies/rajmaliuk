@@ -10,7 +10,7 @@ const StickyBackground = () => {
       <div className={styles.background}></div>
       <div className={styles.sticky}>
         <p className={`${Mont.className} ${styles.success}`}>
-          Your success is my<br></br> mission, 
+          Your success is my<br></br> mission,<br className={styles.brMobile}></br> 
           <span className={`${allura.className} ${styles.worldwide}`}>worldwide</span>
         </p>
       </div>
