@@ -157,10 +157,12 @@ display: block;  }
 }
 
 .horizontalLIne{
-  margin-left: 30px;
   width: 380px;
 }
 .plusImage{
   margin-right: 40px;
+}
+.container {
+ width: 100%;
 }
 }
