@@ -6,7 +6,6 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  max-width: 1440px;
   object-fit: contain;
   margin-right: 90px;
   margin-left: 90px;
@@ -29,6 +28,32 @@
   margin: 0 10px;
   
 }
+.carousel_container_father {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel_container_father::before,
+.carousel_container_father::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 250px; 
+  z-index: 2;
+  pointer-events: none; 
+}
+
+.carousel_container_father::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.carousel_container_father::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
 
 @keyframes scrollRight {
 

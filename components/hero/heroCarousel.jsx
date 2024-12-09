@@ -11,10 +11,8 @@ const CarouselHero = () => {
    '/assets/imgs/make.png'
   ];
 
-  // Crear un array vacío donde vamos a almacenar los elementos de imagen.
   const images = [];
 
-  // Bucle while para crear 100 iteraciones.
   let i = 0;
   while (i < 200) {
     slides.forEach((slide, index) => {

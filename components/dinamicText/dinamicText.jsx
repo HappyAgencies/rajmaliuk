@@ -42,7 +42,7 @@ const DinamicText = () => {
             <span
               key={index}
               style={{
-                color: index < wordsToDisplay ? "white" : "#313131", // Cambiar el color en base al porcentaje
+                color: index < wordsToDisplay ? "white" : "#313131", 
                 transition: "color 0.3s ease-out",
               }}
             >

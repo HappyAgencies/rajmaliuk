@@ -5,7 +5,6 @@ import styles from './cards.module.css';
 import { Mont } from '../../app/fonts/fonts';
 
 const Cards = () => {
-  // Estado para rastrear la tarjeta que está en hover
   const [hoveredCard, setHoveredCard] = useState(null);
 
   const handleMouseEnter = (cardId) => {
@@ -24,7 +23,6 @@ const Cards = () => {
         <div className={styles.bar2}></div>
       </div>
       <div className={styles.cardsContainer}>
-        {/* Tarjeta 1 */}
         <div
           className={`${Mont.className} ${styles.card}`}
           onMouseEnter={() => handleMouseEnter(1)}
@@ -62,8 +60,6 @@ const Cards = () => {
             <p className={styles.cardYear}>2019 - NOW</p>
           </div>
         </div>
-
-        {/* Tarjeta 2 */}
         <div
           className={`${Mont.className} ${styles.card}`}
           onMouseEnter={() => handleMouseEnter(2)}

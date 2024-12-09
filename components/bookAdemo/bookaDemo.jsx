@@ -10,15 +10,15 @@ const questions = [
   { id: 3, text: 'Question #3', answer: 'In his role as Fractional CMO, Ariel develops and executes effective marketing strategies to drive brand growth. He offers part-time marketing expertise, helping clients achieve their market objectives without the commitment of a full-time CMO.' },
   { id: 4, text: 'Question #4', answer: 'In his role as Fractional CMO, Ariel develops and executes effective marketing strategies to drive brand growth. He offers part-time marketing expertise, helping clients achieve their market objectives without the commitment of a full-time CMO.' },
 
-  // Puedes añadir más preguntas aquí en el futuro
+  
 ];
 
 const BookaDemo = () => {
-  // Crear un estado para controlar qué respuesta se debe mostrar
+  
   const [activeQuestion, setActiveQuestion] = useState(null);
 
   const toggleAnswer = (id) => {
-    // Si la pregunta ya está activa, la cerramos; si no, la abrimos
+    
     setActiveQuestion(activeQuestion === id ? null : id);
   };
 
@@ -48,11 +48,11 @@ const BookaDemo = () => {
                 width={19}
                 height={19}
                 alt="toggle answer"
-                onClick={() => toggleAnswer(question.id)} // Toggle al hacer clic
+                onClick={() => toggleAnswer(question.id)} 
               />
             </div>
 
-            {/* Mostrar la respuesta solo si la pregunta está activa */}
+           
             {activeQuestion === question.id && (
               <div className={styles.answer}>
                 <p>{question.answer}</p>

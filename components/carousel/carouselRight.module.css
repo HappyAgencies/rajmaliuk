@@ -1,39 +1,52 @@
 .carousel_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    max-width: 1440px;
-    object-fit: contain;
-    margin-right: 90px;
-    margin-left: 90px;
-    margin-bottom: 80px;
-    margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  margin: 0 auto;
+}
 
+.carousel_container::before,
+.carousel_container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 250px; 
+  z-index: 2;
+  pointer-events: none; 
+}
+
+.carousel_container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.carousel_container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.carousel {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  animation-iteration-count: infinite;
+  animation: scrollRight 100s infinite linear;
+  position: relative;
+}
+
+.carousel_item {
+  flex-shrink: 0;
+  margin: 0 10px;
+}
+
+@keyframes scrollRight {
+  100% {
+    transform: translateX(100%);
   }
-  
-  .carousel {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    animation-iteration-count: infinite;
-    animation: scrollRight 100s infinite linear;
-    position: relative;
-  }
-  
-  .carousel_item {
-    flex-shrink: 0; /* Evita que las imágenes se compriman */
-    margin: 0 10px; /* Añade espacio entre las imágenes si lo necesitas */
-    
-  }
-  
-  @keyframes scrollRight {
-  
-    100% {
-      transform: translateX(100%); /* Mueve las imágenes completamente hacia la izquierda */
-    }
-  }
-  
+}
