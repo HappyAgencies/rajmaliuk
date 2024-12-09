@@ -6,10 +6,12 @@ import { Mont, allura } from '../../app/fonts/fonts';
 import styles from './hero.module.css';
 import stylesCarousel from './carousel.module.css';
 import CarouselHero from './heroCarousel';
+import Header from '../header';
 
 export const Hero = () => {
   return (
-    <>
+    <div className={styles.mobileBg}>        
+          <Header/>
       <div className={styles.heroTwoColumns}>
         <div className={styles.left_colum_father}>
           <div className={styles.heroText}>
@@ -50,6 +52,6 @@ export const Hero = () => {
         <span className={styles.scrollDivspan}>Scroll</span>
         <Image width={20} height={20} src="/assets/imgs/down-arrow1.png" alt="Down Arrow" />
       </div>
-    </>
+      </div>
   );
 };

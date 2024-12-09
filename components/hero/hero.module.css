@@ -155,6 +155,20 @@ line-height: 11.899px;
     }
 }
 
+@media (min-width: 769px) and (max-width: 1040px) {
+    .imageFather{
+        display: none;
+    }
+    .heroTwoColumns{
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .left_colum_father{
+        margin-top: 150px;
+    }
+  
+}
+
 
 @media(max-width:395px){
  
@@ -166,4 +180,23 @@ line-height: 11.899px;
         margin-top:30px;
        
     }
+}
+@media (min-width:760px) and (max-width:1040px){
+    .mobileBg{
+       background-image: url('../../public/assets/imgs/Gradient.png');  
+       padding-top: 50px;
+       background-size: cover;
+      
+    }
+
+
+}
+@media(max-width:759px){
+    .mobileBg{
+       background-image: url('../../public/assets/imgs/Gradient.png');  
+       background-size: cover;
+      
+    }
+
+
 }

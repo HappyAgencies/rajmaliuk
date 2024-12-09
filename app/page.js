@@ -10,6 +10,7 @@ import  Carousel  from "../components/carousel/carousel";
 import CarouselRight from "../components/carousel/carouselRight";
 import ExperienceMobile from "../components/experience/experienceMobile";
 import Heroheader from "../components/hero&header/hero&header";
+import { Hero } from "../components/hero/hero";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <div className={styles.background}>
       <div className={styles.mobileBackground}>
 
-  <Heroheader></Heroheader>
+  <Hero></Hero>
       </div>
       <DinamicText></DinamicText>
       <Experience className={styles.xpDesktop}/>
