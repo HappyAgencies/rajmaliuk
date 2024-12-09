@@ -170,3 +170,23 @@ display: block;  }
   width: calc(90%);
 }
 }
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .buttonBox {
+    width:auto;
+  }
+
+}
+@media (min-width: 769px) and (max-width: 960px) {
+  .dobleColum {
+display: block;  
+margin-top: 50px;
+}
+.price{
+  margin-top: 150px;
+}
+.buttonBox{
+  margin-top: 45px;
+}
+
+}

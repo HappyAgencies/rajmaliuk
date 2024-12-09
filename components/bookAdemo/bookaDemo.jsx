@@ -27,7 +27,7 @@ const BookaDemo = () => {
       <h3 className={`${Mont.className} ${styles.price}`}>250 /hr</h3>
       <div className={styles.dobleColum}>
         <div className={`${Mont.className} ${styles.titleBox}`}>
-          <h1 className={styles.title}>Book a 1hr <br className = {styles.brsP} /> one-on-one consultation</h1>
+          <h1 className={styles.title}>Book a 1hr <br className = {styles.brsP} /><span>one-on-one consultation</span> </h1>
         </div>
         <div className={styles.buttonBox}>
           <h2 className={`${Mont.className} ${styles.buttonText}`}>Schedule a consultation</h2>
