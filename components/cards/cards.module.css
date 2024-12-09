@@ -85,6 +85,9 @@
 @media (max-width:768px){
     .cardsContainer{
         flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        margin-top: 50px;
     }
     .bar1, .bar2{
         display: none;
@@ -130,9 +133,19 @@
     .supertek{
         width: 137px;
         height: 28px;
+        margin-top: 5px;
+    
     }
     .card{
         padding:20px;
+    }
+    .cardSectionTitle{
+        margin-top: 100px;
+    }
+    .brandSubtitle{
+        color: white;
+        font-weight: 500;
+        margin-top: 5px;
     }
 }
 
