@@ -42,3 +42,10 @@
         margin-bottom: 10px;
     }
 }
+
+@media(max-width:385px){
+    .header-div{
+        padding-top: 60px ;
+    }
+
+}   

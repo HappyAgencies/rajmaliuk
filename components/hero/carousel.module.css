@@ -45,3 +45,12 @@
         margin-top: 80px;
     }
 }
+
+
+@media(max-width: 385px) {
+    .heroCarousel {
+        display: block; 
+        margin-top: 60px;
+    }
+}
+
