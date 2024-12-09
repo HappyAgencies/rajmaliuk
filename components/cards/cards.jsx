@@ -35,7 +35,7 @@ const Cards = () => {
               <p className={styles.cardBrand}>MTC</p>
               <p className={styles.brandSubtitle}>Outsourcing Platform</p>
             </div>
-            <Image className={styles.mtc} src="/assets/imgs/mtc.png" alt="" width={58} height={40} />
+            <Image className={styles.mtc} src="/assets/imgs/Group 133.svg" alt="" width={110} height={50} />
           </div>
              {/* 
           <div className={styles.imageDiv}>
@@ -74,7 +74,7 @@ const Cards = () => {
               <p className={styles.cardBrand}>SuperTek</p>
               <p className={styles.brandSubtitle}>Crypto mining technical services</p>
             </div>
-            <Image src="/assets/imgs/supertekNobox.png" className={styles.supertek} alt="" width={120} height={50} />
+            <Image src="/assets/imgs/supertek (1).svg" className={styles.supertek} alt="" width={130} height={50} />
           </div>
        {/* 
 <div className={styles.imageDiv}>
