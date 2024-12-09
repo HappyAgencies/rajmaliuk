@@ -69,7 +69,7 @@ const Cards = () => {
               <p className={styles.cardBrand}>SuperTek</p>
               <p className={styles.brandSubtitle}>Crypto mining technical services</p>
             </div>
-            <Image src="/assets/imgs/supertekNobox.png" className={styles.supertek} alt="" width={250} height={30} />
+            <Image src="/assets/imgs/supertekNobox.png" className={styles.supertek} alt="" width={135} height={29} />
           </div>
           <div className={styles.imageDiv}>
             {hoveredCard === 2 && (
