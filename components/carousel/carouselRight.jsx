@@ -37,6 +37,9 @@ const CarouselRight = () => {
       <div className={styles.carousel}>
         {images}
       </div>
+      <br></br>
+      <br></br>
+
     </div>
   );
 };
