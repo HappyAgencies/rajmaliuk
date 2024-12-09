@@ -7,10 +7,7 @@
     display: none;
 }
 @media(max-width:769){
-    .mobileBackground{
-       /* background-image: url('../public/assets/imgs/Gradient.png');  */
-       background-color: red;
-    }
+
     .background{
         padding-top:0px;
     }

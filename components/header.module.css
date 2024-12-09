@@ -3,6 +3,7 @@
     justify-content: space-between;
     margin: 0px auto;
     max-width: 1440px ;
+    width: 80%;
 }
 .name{
     font-size:30px;
@@ -46,6 +47,7 @@
 @media(max-width:395px){
     .header-div{
         padding-top: 60px ;
+        width: 100%;
     }
 
 }   
