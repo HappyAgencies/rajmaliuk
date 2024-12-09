@@ -42,8 +42,8 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    justify-content: space-between;
     border: 1px solid #8C8C8C;
+    width: auto;
 }
 .cardTopRow{
     display: flex;
@@ -59,29 +59,47 @@
     font-size: 18px;
     line-height: 21px;
     color: #0363FF;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 .cardText{
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
     font-weight: 300;
-    width: 75%;
+    max-width: 500px;
+    width: auto;
 }
 .cardYear{
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
-    width: 20%;
+    width: 100%;
+    text-align: end;
 }
-.imageDiv{
+ /* .imageDiv{
     height: 50vh;
     width: 100%;
-}
+}*/
 .cardBottomRow{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cardsContainer {
+        display: block;
+    }
+    .card:nth-child(1) {
+        margin-bottom: 100px;
+    }
+    
+    .brands{
+        text-align: center;
+    }
+}
+
 @media (max-width:768px){
     .cardsContainer{
         flex-direction: column;

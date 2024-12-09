@@ -26,6 +26,7 @@ const CarouselRight = () => {
             alt={`Slide ${index}`}
           />
         </div>
+        
       );
     });
     i++;

@@ -37,7 +37,9 @@ const Cards = () => {
             </div>
             <Image className={styles.mtc} src="/assets/imgs/mtc.png" alt="" width={58} height={40} />
           </div>
+             {/* 
           <div className={styles.imageDiv}>
+
             {hoveredCard === 1 && (
               <Image 
               src="/assets/imgs/man.png" 
@@ -47,7 +49,10 @@ const Cards = () => {
               width={800} 
             />
             )}
+   
+
           </div>
+                   */}
           <div className={styles.cardBottomRow}>
             <p className={styles.cardText}>
               MTC is an outsourcing platform that helps businesses delegate key tasks to experts. With skilled
@@ -69,19 +74,22 @@ const Cards = () => {
               <p className={styles.cardBrand}>SuperTek</p>
               <p className={styles.brandSubtitle}>Crypto mining technical services</p>
             </div>
-            <Image src="/assets/imgs/supertekNobox.png" className={styles.supertek} alt="" width={135} height={29} />
+            <Image src="/assets/imgs/supertekNobox.png" className={styles.supertek} alt="" width={135} height={30} />
           </div>
-          <div className={styles.imageDiv}>
-            {hoveredCard === 2 && (
-               <Image 
-               src="/assets/imgs/man.png" 
-               alt="MTC Hover" 
-               style={{ maxHeight: '540px', width: 'auto', objectFit: 'cover' }} 
-               height={540} 
-               width={800} 
-             />
-            )}
-          </div>
+       {/* 
+<div className={styles.imageDiv}>
+  {hoveredCard === 2 && (
+    <Image 
+      src="/assets/imgs/man.png" 
+      alt="MTC Hover" 
+      style={{ maxHeight: '540px', width: 'auto', objectFit: 'cover' }} 
+      height={540} 
+      width={800} 
+    />
+  )}
+</div> 
+*/}
+
           <div className={styles.cardBottomRow}>
             <p className={styles.cardText}>
               SuperTek provides expert technical services for cryptocurrency mining, ensuring optimal performance,

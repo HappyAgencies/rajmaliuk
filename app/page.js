@@ -26,7 +26,6 @@ export default function Home() {
       <Carousel/>
       <br></br>
       <CarouselRight/>
-
       <StickyBackground/>
       <BookaDemo></BookaDemo>
       <Footer/>
