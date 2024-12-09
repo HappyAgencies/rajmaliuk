@@ -74,7 +74,7 @@ const Cards = () => {
               <p className={styles.cardBrand}>SuperTek</p>
               <p className={styles.brandSubtitle}>Crypto mining technical services</p>
             </div>
-            <Image src="/assets/imgs/supertekNobox.png" className={styles.supertek} alt="" width={130} height={50} />
+            <Image src="/assets/imgs/supertekNobox.png" className={styles.supertek} alt="" width={120} height={50} />
           </div>
        {/* 
 <div className={styles.imageDiv}>
