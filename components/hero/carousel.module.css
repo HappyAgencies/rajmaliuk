@@ -47,7 +47,7 @@
 }
 
 
-@media(max-width: 385px) {
+@media(max-width: 395px) {
     .heroCarousel {
         display: block; 
         margin-top: 60px;
