@@ -29,9 +29,12 @@
     font-weight: 400;
     line-height: 70px;
     margin-top: 25vh;
+    color: #ffff;
   }
   .worldwide{
     font-size: 64px;
+    color: #ffff;
+
   }
   .brMobile{
     display: none;

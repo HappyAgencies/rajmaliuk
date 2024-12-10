@@ -9,6 +9,7 @@
     font-weight: 500;
     line-height: 65px;
     margin-bottom: 48px;
+    color: #ffffff;
 }
 .unlock{
     color:#0363FF;
@@ -30,6 +31,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
+    color: #ffffff;
 }
 .rightColumn{
     display: flex;
