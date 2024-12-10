@@ -36,10 +36,10 @@ const BookaDemo = () => {
 
       <div className={styles.qaSection}>
         {questions.map((question) => (
-          <div key={question.id}>
+          <div key={question.id} onClick={() => toggleAnswer(question.id)}>
             <hr className={styles.horizontalLIne} />
             <div className={styles.question}>
-              <h3 className={`${Mont.className} ${styles.qaQuestion}`}>
+              <h3   className={`${Mont.className} ${styles.qaQuestion}`}>
                 {question.text}
               </h3>
               <Image
