@@ -203,7 +203,6 @@ line-height: 11.899px;
     .mobileBg{
        background-image: url('../../public/assets/imgs/Gradient.png');  
        background-size: cover;
-       height: 100vh;
       
     }
 
