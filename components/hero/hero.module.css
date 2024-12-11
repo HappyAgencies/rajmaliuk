@@ -14,6 +14,7 @@
 @media (min-width: 1441px) {
     .heroTwoColumns {
         margin: 0px auto;
+        justify-content: flex-end;
     }
   }
 
