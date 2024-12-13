@@ -29,39 +29,45 @@ const BookaDemo = () => {
         <div className={`${Mont.className} ${styles.titleBox}`}>
           <h1 className={styles.title}>Book a 1hr <br className = {styles.brsP} /><span>one-on-one consultation</span> </h1>
         </div>
-        <div className={styles.buttonBox}>
-          <h2 className={`${Mont.className} ${styles.buttonText}`}>Schedule a consultation</h2>
-        </div>
       </div>
 
       <div className={styles.qaSection}>
-        {questions.map((question) => (
-          <div key={question.id} onClick={() => toggleAnswer(question.id)}>
-            <hr className={styles.horizontalLIne} />
-            <div className={styles.question}>
-              <h3   className={`${Mont.className} ${styles.qaQuestion}`}>
-                {question.text}
-              </h3>
-              <Image
-                className={`${styles.plusImage} ${activeQuestion === question.id ? styles.rotated : ''}`}
-                src="/assets/imgs/icon.png"
-                width={19}
-                height={19}
-                alt="toggle answer"
-                onClick={() => toggleAnswer(question.id)} 
-              />
-            </div>
 
-           
-            {activeQuestion === question.id && (
-              <div className={styles.answer}>
-                <p>{question.answer}</p>
-              </div>
-            )}
 
-            <hr className={styles.horizontalLIne} />
+
+  <div className={styles.left_column}>
+    <div className="meetings-iframe-container" data-src="https://meetwith.happyagencies.com/meetings/ariel/rajmaliukcom?embed=true"></div>
+    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+  </div>
+  <div className={styles.right_column}>
+    {questions.map((question) => (
+      <div key={question.id} onClick={() => toggleAnswer(question.id)}>
+        <hr className={styles.horizontalLIne} />
+        <div className={styles.question}>
+          <h3 className={`${Mont.className} ${styles.qaQuestion}`}>
+            {question.text}
+          </h3>
+          <Image
+            className={`${styles.plusImage} ${activeQuestion === question.id ? styles.rotated : ''}`}
+            src="/assets/imgs/icon.png"
+            width={19}
+            height={19}
+            alt="toggle answer"
+            onClick={() => toggleAnswer(question.id)} 
+          />
+        </div>
+        {activeQuestion === question.id && (
+          <div className={styles.answer}>
+            <p>{question.answer}</p>
           </div>
-        ))}
+        )}
+        <hr className={styles.horizontalLIne} />
+      </div>
+    ))}
+  </div>
+
+
+
       </div>
     </div>
   );

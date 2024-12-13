@@ -190,3 +190,21 @@ margin-top: 50px;
 }
 
 }
+
+
+.qaSection {
+  display: flex;
+  justify-content: center; 
+  align-items: start; 
+  gap: 20px;
+}
+
+.left_column, .right_column {
+  flex: 1; 
+  padding: 20px; 
+}
+
+
+.left_column{
+  background-color: red;
+}
