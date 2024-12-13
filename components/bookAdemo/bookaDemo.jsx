@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mont } from '../../app/fonts/fonts';
 import styles from './bookAdemo.module.css';
 import Image from 'next/image';
@@ -22,6 +22,19 @@ const BookaDemo = () => {
     setActiveQuestion(activeQuestion === id ? null : id);
   };
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Limpiar el script al desmontar el componente
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+
   return (
     <div className={styles.container}>
       <h3 className={`${Mont.className} ${styles.price}`}>250 /hr</h3>
@@ -36,9 +49,10 @@ const BookaDemo = () => {
 
 
   <div className={styles.left_column}>
-    <div className="meetings-iframe-container" data-src="https://meetwith.happyagencies.com/meetings/ariel/rajmaliukcom?embed=true"></div>
-    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-  </div>
+  <div className="meetings-iframe-container" data-src="https://meetwith.happyagencies.com/meetings/ariel/rajmaliukcom?embed=true">
+      {/* El contenido del iframe se maneja por el script externo, no necesita src en la etiqueta iframe */}
+    </div>
+     </div>
   <div className={styles.right_column}>
     {questions.map((question) => (
       <div key={question.id} onClick={() => toggleAnswer(question.id)}>
