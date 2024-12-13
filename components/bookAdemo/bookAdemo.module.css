@@ -203,3 +203,9 @@ margin-top: 50px;
   flex: 1; 
   padding: 20px; 
 }
+
+@media(max-width:1024px){
+  .qaSection {
+    display: block;
+  }
+}
