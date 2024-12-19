@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "contentful": "^11.3.3",
+    "contentful-import": "^9.4.76",
     "gsap": "^3.12.5",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",

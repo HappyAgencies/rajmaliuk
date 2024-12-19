@@ -8,7 +8,8 @@ import stylesCarousel from './carousel.module.css';
 import CarouselHero from './heroCarousel';
 import Header from '../header';
 
-export const Hero = () => {
+
+export const Hero = (props) => {
   return (
     <div className={styles.mobileBg}>        
           <Header/>
@@ -16,28 +17,54 @@ export const Hero = () => {
         <div className={styles.left_colum_father}>
           <div className={styles.heroText}>
             <h1 className={`${styles.heroQuote} ${Mont.className}`}>
-              “Empowering Your Business Through Expert Consultancy”
+             {props.title}
             </h1>
             <a className={`${Mont.className} ${styles.appointment}`} href="#">
-              Schedule an Appointment
+            {props.mobileButton}
             </a>
           </div>
           <div className={styles.heroParagraph}>
-            <p className={`${styles.ariel} ${allura.className}`}>Ariel Rajmaliuk</p>
+            <p className={`${styles.ariel} ${allura.className}`}>{props.heroParagraph}</p>
             <p className={`${styles.heroSubtitle} ${Mont.className}`}>
-              CEO @happyagencies & Fractional{' '}
-              <span className={styles.cto}>CTO/CMO</span>
+              {props.heroUnderTitleText2}
+              <span className={styles.cto}> {props.heroUnderTitleText2Span}</span>
             </p>
           </div>
           <div className={styles.partners}>
-            <Image src="/assets/imgs/upwork.png" width={122} height={43} alt="Upwork" />
-            <Image src="/assets/imgs/clutch.png" width={100} height={25} alt="Clutch" />
-            <Image src="/assets/imgs/hubSpot.png" width={110} height={38} alt="HubSpot" />
-            <Image src="/assets/imgs/googlePartner.png" width={83} height={34} alt="Google Partner" />
-            <Image src="/assets/imgs/make.png" width={159} height={19} alt="Make" />
+          <Image 
+                src={props.logo.startsWith('//') ? `https:${logo}` : props.logo}
+                width={122} 
+                height={43} 
+                alt="Logo" 
+              />            
+          <Image 
+               src={props.logo2.startsWith('//') ? `https:${logo2}` : props.logo2}
+               width={100}
+               height={25} 
+               alt="Logo2" 
+               />
+
+            <Image 
+              src={props.logo3.startsWith('//') ? `https:${logo3}` : props.logo3} 
+              width={110} 
+              height={38}
+              alt="Logo3" 
+              />
+            <Image 
+              src={props.logo4.startsWith('//') ? `https:${logo4}` : props.logo4}
+              width={83} 
+              height={34} 
+              alt="Logo4 " 
+              />
+            <Image 
+              src={props.logo5.startsWith('//') ? `https:${logo5}` : props.logo5}
+              width={159} 
+              height={19} 
+              alt="Logo5" 
+              />
           </div>
           <div className={styles.scrollContainer}>
-            <p>Scroll</p>
+            <p>{props.scroll}</p>
             <div className={styles.line}></div>
           </div>
         </div>
@@ -49,9 +76,12 @@ export const Hero = () => {
         <CarouselHero></CarouselHero>
       </div>
       <div className={styles.scrollDiv}>
-        <span className={styles.scrollDivspan}>Scroll</span>
+        <span className={styles.scrollDivspan}>{props.scroll}</span>
         <Image width={20} height={20} src="/assets/imgs/down-arrow1.png" alt="Down Arrow" />
       </div>
       </div>
   );
 };
+
+
+
