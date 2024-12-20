@@ -64,7 +64,14 @@ async function getLiveCardData() {
 
   return {
     sectiontitle: result.fields.sectiontitle    || 'Default Title',
-
+    card1Ttile : result.fields.card1Ttile  || 'Default',
+    card1SubTitle : result.fields.card1SubTitle  || 'Default',
+    card1Paragraph : result.fields.card1Paragraph || 'Default',
+    card1Date : result.fields.card1Date || 'Default',
+    card2Ttitle: result.fields.card2Ttitle, 
+    card2SubTitle: result.fields.card2SubTitle,
+    card2Paragraph: result.fields.card2Paragraph,
+    card2Date: result.fields.card2Date,
   }
 }
 export default async function Home() {

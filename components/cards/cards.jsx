@@ -30,8 +30,8 @@ const Cards = (props) => {
         >
           <div className={styles.cardTopRow}>
             <div>
-              <p className={styles.cardBrand}>MTC</p>
-              <p className={styles.brandSubtitle}>Outsourcing Platform</p>
+              <p className={styles.cardBrand}>{props.card1Ttile}</p>
+              <p className={styles.brandSubtitle}>{props.card1SubTitle}</p>
             </div>
             <div className={styles.mtc} alt="logo"  >
             <svg width="110" height="50" viewBox="0 0 356 240" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,29 +41,12 @@ const Cards = (props) => {
             
             </div>
           </div>
-             {/* 
-          <div className={styles.imageDiv}>
-
-            {hoveredCard === 1 && (
-              <Image 
-              src="/assets/imgs/man.png" 
-              alt="MTC Hover" 
-              style={{ maxHeight: '540px', width: 'auto', objectFit: 'cover' }} 
-              height={540} 
-              width={800} 
-            />
-            )}
-   
-
-          </div>
-                   */}
+            
           <div className={styles.cardBottomRow}>
             <p className={styles.cardText}>
-              MTC is an outsourcing platform that helps businesses delegate key tasks to experts. With skilled
-              professionals, MTC optimizes processes, cuts costs, and boosts productivity, letting companies focus on
-              core activities.
+            {props.card1Paragraph}
             </p>
-            <p className={styles.cardYear}>2019 - NOW</p>
+            <p className={styles.cardYear}>{props.card1Date}</p>
           </div>
         </div>
         <div
@@ -73,8 +56,8 @@ const Cards = (props) => {
         >
           <div className={styles.cardTopRow}>
             <div>
-              <p className={styles.cardBrand}>SuperTek</p>
-              <p className={styles.brandSubtitle}>Crypto mining technical services</p>
+              <p className={styles.cardBrand}>{props.card2Ttitle}</p>
+              <p className={styles.brandSubtitle}>{props.card2SubTitle}</p>
             </div>
             <div className={styles.supertek} alt="supertek logo"  >
             <svg width="136" height="29" viewBox="0 0 136 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,10 +86,9 @@ const Cards = (props) => {
 
           <div className={styles.cardBottomRow}>
             <p className={styles.cardText}>
-              SuperTek provides expert technical services for cryptocurrency mining, ensuring optimal performance,
-              maintenance, and troubleshooting to help mining businesses maximize profitability.
+             {props.card2Paragraph}
             </p>
-            <p className={styles.cardYear}>2017 - NOW</p>
+            <p className={styles.cardYear}>{props.card2Date}</p>
           </div>
         </div>
       </div>
