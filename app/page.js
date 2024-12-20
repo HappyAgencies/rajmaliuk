@@ -84,6 +84,16 @@ async function getStickyData() {
   }
 }
 
+async function getBoockaDemoData() {
+  const result = await client.getEntry('t7riDdaQ3F3nsKdNNFGi4')
+  return {
+
+    price: result.fields.price,
+    sectionTitle : result.fields.sectionTitle
+   
+
+  }
+}
 
 
 
@@ -92,6 +102,7 @@ export default async function Home() {
   const liveTextData = await getLiveTextData()
   const cardData = await getLiveCardData()
   const stockyData = await getStickyData()
+  const boockAdemoData = await getBoockaDemoData()
   return (
     <>
       <div className={styles.background}>
@@ -106,7 +117,7 @@ export default async function Home() {
         <br />
         <CarouselRight/>
         <StickyBackground {...stockyData}/>
-        <BookaDemo />
+        <BookaDemo {...boockAdemoData}/>
         <Footer/>
       </div>
     </>

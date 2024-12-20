@@ -13,7 +13,7 @@ const questions = [
   
 ];
 
-const BookaDemo = () => {
+const BookaDemo = (props) => {
   
   const [activeQuestion, setActiveQuestion] = useState(null);
 
@@ -37,10 +37,10 @@ const BookaDemo = () => {
 
   return (
     <div className={styles.container}>
-      <h3 className={`${Mont.className} ${styles.price}`}>250 /hr</h3>
+      <h3 className={`${Mont.className} ${styles.price}`}>{props.price}</h3>
       <div className={styles.dobleColum}>
         <div className={`${Mont.className} ${styles.titleBox}`}>
-          <h1 className={styles.title}>Book a 1hr <br className = {styles.brsP} /><span>one-on-one consultation</span> </h1>
+          <h1 className={styles.title}>{props.sectionTitle}<br className = {styles.brsP} /> </h1>
         </div>
       </div>
 
@@ -50,7 +50,6 @@ const BookaDemo = () => {
 
   <div className={styles.left_column}>
   <div className="meetings-iframe-container" data-src="https://meetwith.happyagencies.com/meetings/ariel/rajmaliukcom?embed=true">
-      {/* El contenido del iframe se maneja por el script externo, no necesita src en la etiqueta iframe */}
     </div>
      </div>
   <div className={styles.right_column}>
