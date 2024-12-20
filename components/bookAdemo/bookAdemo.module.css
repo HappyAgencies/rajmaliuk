@@ -85,7 +85,7 @@ margin: 30px;
 }
 
 .answer{
-    max-width: 860px;
+    max-width: 490px;
     max-height: 920px;
     width: auto;
     height: auto;
@@ -202,6 +202,10 @@ margin-top: 50px;
 .left_column, .right_column {
   flex: 1; 
   padding: 20px; 
+}
+
+.left_column{
+margin-top: -20px;
 }
 
 @media(max-width:1024px){
