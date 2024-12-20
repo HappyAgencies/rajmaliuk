@@ -57,9 +57,20 @@ async function getLiveTextData() {
   }
 }
 
+async function getLiveCardData() {
+  const result = await client.getEntry('7EtQrcJ006KjphJ5FkJyXP')
+
+
+
+  return {
+    sectiontitle: result.fields.sectiontitle    || 'Default Title',
+
+  }
+}
 export default async function Home() {
   const heroData = await getHeroData()
   const liveTextData = await getLiveTextData()
+  const cardData = await getLiveCardData()
   return (
     <>
       <div className={styles.background}>
@@ -69,7 +80,7 @@ export default async function Home() {
         <DinamicText {...liveTextData}/>
         <Experience className={styles.xpDesktop}/>
         <ExperienceMobile className={styles.xpMobile}/>
-        <Cards/>
+        <Cards {...cardData}/>
         <Carousel/>
         <br />
         <CarouselRight/>

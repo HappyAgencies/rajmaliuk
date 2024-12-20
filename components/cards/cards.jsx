@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './cards.module.css';
 import { Mont } from '../../app/fonts/fonts';
 
-const Cards = () => {
+const Cards = (props) => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   const handleMouseEnter = (cardId) => {
@@ -19,7 +19,7 @@ const Cards = () => {
     <div className="cardsSection">
       <div className={styles.cardSectionTitle}>
         <div className={styles.bar1}></div>
-        <h2 className={`${Mont.className} ${styles.brands}`}>Brands Led and Founded</h2>
+        <h2 className={`${Mont.className} ${styles.brands}`}>{props.sectiontitle}</h2>
         <div className={styles.bar2}></div>
       </div>
       <div className={styles.cardsContainer}>
