@@ -30,6 +30,7 @@
     line-height: 70px;
     margin-top: 25vh;
     color: #ffff;
+    max-width: 600px;
   }
   .worldwide{
     font-size: 64px;

@@ -4,14 +4,14 @@ import { allura } from '../../app/fonts/fonts';
 import { Mont } from '../../app/fonts/fonts';
 import styles from './stickyBackground.module.css';
 
-const StickyBackground = () => {
+const StickyBackground = (props) => {
   return (
     <div className={styles.stickyWrapper}>
       <div className={styles.background}></div>
       <div className={styles.sticky}>
         <p className={`${Mont.className} ${styles.success}`}>
-          Your success is my<br></br> mission, <br className={styles.brMobile}></br> 
-          <span className={`${allura.className} ${styles.worldwide}`}>worldwide</span>
+         {props.text}
+          <span className={`${allura.className} ${styles.worldwide}`}>{props.specialText}</span>
         </p>
       </div>
     </div>
