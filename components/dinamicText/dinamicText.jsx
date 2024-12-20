@@ -4,8 +4,8 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./dinamicText.module.css";
 import { Mont } from "../../app/fonts/fonts";
 
-const DinamicText = () => {
-  const fullText = "I help companies solve complex technical & GTM challenges";
+const DinamicText = (props) => {
+  const fullText = props.liveText;
   const words = fullText.split(" ");
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const textRef = useRef(null);

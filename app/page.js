@@ -45,16 +45,28 @@ async function getHeroData() {
   }
 }
 
+async function getLiveTextData() {
+  const result = await client.getEntry('6QnLbjIlAwIj31Gbaaqsf9')
+
+
+
+  return {
+    liveText: result.fields.text    || 'Default Title',
+  
+
+  }
+}
+
 export default async function Home() {
   const heroData = await getHeroData()
-
+  const liveTextData = await getLiveTextData()
   return (
     <>
       <div className={styles.background}>
         <div className={styles.mobileBackground}>
           <Hero {...heroData} />
         </div>
-        <DinamicText />
+        <DinamicText {...liveTextData}/>
         <Experience className={styles.xpDesktop}/>
         <ExperienceMobile className={styles.xpMobile}/>
         <Cards/>
