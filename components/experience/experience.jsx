@@ -4,25 +4,26 @@ import styles from './experience.module.css';
 import { Mont } from '../../app/fonts/fonts';
 import { allura } from '../../app/fonts/fonts';
 
-const Experience = () => {
+const Experience = (props) => {
   const [hoveredCategory, setHoveredCategory] = useState('');
 
   const categories = [
-    { name: 'Areas of Expertise', text: 'We specialize in diverse areas to drive growth.' },
-    { name: 'Methodology', text: 'Our methodology ensures measurable results.' },
-    { name: 'Impact on Clients', text: 'Delivering significant impact to our clients.' },
-    { name: 'Added Value', text: 'Providing unparalleled value to your brand.' },
+    { name: `${props.field1title}`, text: `${props.field1answer}` },
+    { name: `${props.field2title}`, text: `${props.field2answer}` },
+    { name: `${props.field3title}`, text: `${props.field3answer}` },
+    { name: `${props.field4title}`, text: `${props.field4answer}` },
   ];
 
   return (
     <section className={styles.experience}>
       <div style={{ maxWidth: '1440px', margin:'0px auto', width:'80%'}}>
-        <p className={`${Mont.className} ${styles.experienceText}`}>
-          A decade of experience.
-          <br />
-          United to <span className={`${allura.className} ${styles.unlock}`}>Unlock</span> a new era <br />
-          in brand growth.
-        </p>
+      <p
+  className={`${Mont.className} ${styles.experienceText}`}
+  dangerouslySetInnerHTML={{
+    __html: props.title
+  }}
+></p>
+
     <div style={{ display: 'flex', gap: '20px' }}>
       <div style={{ flex: 1 }}>
         
