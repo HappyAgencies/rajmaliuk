@@ -89,7 +89,18 @@ async function getBoockaDemoData() {
   return {
 
     price: result.fields.price,
-    sectionTitle : result.fields.sectionTitle
+    sectionTitle : result.fields.sectionTitle,
+    question1 : result.fields.question1,
+    answer1 : result.fields.answer1,
+    question2 : result.fields.question2,
+    answer2 : result.fields.answer2,
+    question3 : result.fields.question3,
+    answer3 : result.fields.answer3,
+    question4 : result.fields.question4,
+    answer4 : result.fields.answer4,
+    scriptSrc : result.fields.scriptSrc,
+    dataSrc : result.fields.dataSrc
+
    
 
   }

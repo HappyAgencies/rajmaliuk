@@ -4,16 +4,18 @@ import { Mont } from '../../app/fonts/fonts';
 import styles from './bookAdemo.module.css';
 import Image from 'next/image';
 
-const questions = [
-  { id: 1, text: 'Question #1', answer: 'In his role as Fractional CMO, Ariel develops and executes effective marketing strategies to drive brand growth. He offers part-time marketing expertise, helping clients achieve their market objectives without the commitment of a full-time CMO.' },
-  { id: 2, text: 'Question #2', answer: 'In his role as Fractional CMO, Ariel develops and executes effective marketing strategies to drive brand growth. He offers part-time marketing expertise, helping clients achieve their market objectives without the commitment of a full-time CMO.' },
-  { id: 3, text: 'Question #3', answer: 'In his role as Fractional CMO, Ariel develops and executes effective marketing strategies to drive brand growth. He offers part-time marketing expertise, helping clients achieve their market objectives without the commitment of a full-time CMO.' },
-  { id: 4, text: 'Question #4', answer: 'In his role as Fractional CMO, Ariel develops and executes effective marketing strategies to drive brand growth. He offers part-time marketing expertise, helping clients achieve their market objectives without the commitment of a full-time CMO.' },
 
-  
-];
 
 const BookaDemo = (props) => {
+  const questions = [
+    { id: 1, text: `${props.question1}`, answer: `${props.answer1}` },
+    { id: 2, text: `${props.question2}`, answer: `${props.answer2}` },
+    { id: 3, text: `${props.question3}`, answer: `${props.answer3}` },
+    { id: 4, text: `${props.question4}`, answer: `${props.answer4}` },
+
+      
+  
+  ];
   
   const [activeQuestion, setActiveQuestion] = useState(null);
 
@@ -24,7 +26,7 @@ const BookaDemo = (props) => {
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js";
+    script.src = `${props.scriptSrc}`;
     script.async = true;
     document.body.appendChild(script);
 
@@ -49,7 +51,7 @@ const BookaDemo = (props) => {
 
 
   <div className={styles.left_column}>
-  <div className="meetings-iframe-container" data-src="https://meetwith.happyagencies.com/meetings/ariel/rajmaliukcom?embed=true">
+  <div className="meetings-iframe-container" data-src={props.dataSrc}>
     </div>
      </div>
   <div className={styles.right_column}>
