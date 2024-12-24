@@ -1,12 +1,9 @@
 .container {
   margin-left: 82px;
   max-width: 1440px;
+  margin: 0px auto;
 }
-@media (min-width: 1441px) {
-    .container {
-        margin: 0px auto;
-    }
-  }
+
 
 .price {
   color: #0363ff;
@@ -26,6 +23,7 @@
   max-height: 144px;
   width: auto;
   height: auto;
+  margin: 20px;
 }
 .title {
   color: #fff;
@@ -212,4 +210,10 @@ margin-top: -20px;
   .qaSection {
     display: block;
   }
+}
+@media (min-width: 900px) and (max-width: 1550px) {
+  .container{
+    align-content: center;
+  }
+
 }
