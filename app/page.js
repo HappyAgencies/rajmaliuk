@@ -122,15 +122,25 @@ async function getExpirienceData() {
   }
 }
 
+async function getFooterData() {
+  const result = await client.getEntry('ESZNxKud90M5dxGd88Oxu')
+  return {
+    rightText: result.fields.rightText    || 'Default Title',
+    leftText : result.fields.leftText
+
+  }
+}
+
 
 
 export default async function Home() {
-  const heroData = await getHeroData()
-  const liveTextData = await getLiveTextData()
-  const cardData = await getLiveCardData()
-  const stockyData = await getStickyData()
-  const boockAdemoData = await getBoockaDemoData()
-  const expirienceData =await getExpirienceData()
+  const heroData = await getHeroData();
+  const liveTextData = await getLiveTextData();
+  const cardData = await getLiveCardData();
+  const stockyData = await getStickyData();
+  const boockAdemoData = await getBoockaDemoData();
+  const expirienceData =await getExpirienceData();
+  const footerData = await getFooterData();
   return (
     <>
       <div className={styles.background}>
@@ -146,7 +156,7 @@ export default async function Home() {
         <CarouselRight/>
         <StickyBackground {...stockyData}/>
         <BookaDemo {...boockAdemoData}/>
-        <Footer/>
+        <Footer {...footerData}/>
       </div>
     </>
   );
