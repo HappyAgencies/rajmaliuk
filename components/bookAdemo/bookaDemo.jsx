@@ -38,7 +38,7 @@ const BookaDemo = (props) => {
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="book-a-demo">
       <h3 className={`${Mont.className} ${styles.price}`}>{props.price}</h3>
       <div className={styles.dobleColum}>
         <div className={`${Mont.className} ${styles.titleBox}`}>
