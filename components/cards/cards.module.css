@@ -45,6 +45,8 @@
     padding: 40px;
     border: 1px solid #8C8C8C;
     width: auto;
+    border-top-right-radius: 50px;
+
 }
 .cardTopRow{
     display: flex;
@@ -56,12 +58,13 @@
     line-height: 34.13px;
     color: #ffffff;
 }
-.brandSubtitle{
+.brandSubtitle ,  .brandSubtitleSuper{
     font-size: 18px;
     line-height: 21px;
     color: #0363FF;
     margin-top: 5px;
     margin-bottom: 15px;
+    width: 100%;
 }
 .cardText{
     font-size: 18px;
@@ -75,9 +78,12 @@
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
-    width: 100%;
     text-align: end;
+    display: flex;
+    justify-content: flex-end; /* Pega los elementos al borde inferior */
+
 }
+
  /* .imageDiv{
     height: 50vh;
     width: 100%;
@@ -87,6 +93,7 @@
     justify-content: space-between;
     align-items: flex-end;
 }
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .cardsContainer {
@@ -132,15 +139,13 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .cardYear{
-        width: 100%;
-    }
+
     .cardBrand{
         font-size:28px;
         font-weight: 500;
         line-height: 34px;
     }
-    .brandSubtitle{
+    .brandSubtitle  .brandSubtitleSuper{
         font-size: 16px;
         font-weight: 500;
         line-height: 21px;
@@ -158,10 +163,13 @@
     .cardSectionTitle{
         margin-top: 100px;
     }
-    .brandSubtitle{
+    .brandSubtitle .brandSubtitleSuper{
         color: white;
         font-weight: 500;
         margin-top: 5px;
+    }
+    .brandSubtitleSuper{
+        margin-top: 15px;
     }
 }
 
