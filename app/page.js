@@ -10,7 +10,7 @@ import BookaDemo from "../components/bookAdemo/bookaDemo";
 import Footer from "../components/footer/footer";
 import Carousel from "../components/carousel/carousel";
 import CarouselRight from "../components/carousel/carouselRight";
-import Heroheader from "../components/hero&header/hero&header";
+import CardEfect from "../components/cardEfect/cardEfect.jsx";
 import { Hero } from "../components/hero/hero";
 
 var client = contentful.createClient({
@@ -131,6 +131,7 @@ export default async function Home() {
           <Hero {...heroData} />
         </div>
         <DinamicText {...liveTextData}/>
+        <CardEfect></CardEfect>
         <Cards {...cardData}/>
         <Carousel/>
         <br />

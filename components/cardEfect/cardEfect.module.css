@@ -1,0 +1,65 @@
+.contenedor {
+    object-fit: cover;
+    background: url("../../public/assets/imgs/background.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  
+}
+
+.titlecontainer{
+    max-width: 1084px;
+    max-height: 130px;
+    margin: 0px auto;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 65px;
+    text-align: center;
+    margin-top: 122px;
+}
+
+.card {
+    max-width: 528px;
+    max-height: 242px;
+    background: rgba(255, 255, 255, 0.1); /* Aumenta la claridad del fondo */
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 30px;
+    backdrop-filter: blur(20px); 
+    border-radius: 20px;
+
+    box-shadow: 
+        inset 0px 0px 30px rgba(255, 255, 255, 0.2), /* Más blanco en el centro */
+        inset 0px 0px 60px rgba(255, 255, 255, 0.1); /* Mayor suavidad */
+}
+
+.cardNumber, .cardTitle, .cardParagraph {
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+
+
+.cardNumber{
+    font-size: 18px;
+    font-weight: 500;
+    color:#FFFFFF ;
+}
+
+.cardTitle{
+    font-size: 28px;
+    font-weight: 500;
+    color : #FFFFFF;
+    line-height: 30px;
+    margin-bottom: 25px;
+    margin-top: 8px;
+}
+
+.cardParagraph{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+
+}
