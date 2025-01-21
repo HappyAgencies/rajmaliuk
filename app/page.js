@@ -4,14 +4,12 @@ import * as contentful from 'contentful'
 import styles from "./page.module.css"
 import Image from "next/image";
 import DinamicText from "../components/dinamicText/dinamicText";
-import Experience from "../components/experience/experience";
 import Cards from "../components/cards/cards";
 import StickyBackground from "../components/stickyBackground/stickyBackground";
 import BookaDemo from "../components/bookAdemo/bookaDemo";
 import Footer from "../components/footer/footer";
 import Carousel from "../components/carousel/carousel";
 import CarouselRight from "../components/carousel/carouselRight";
-import ExperienceMobile from "../components/experience/experienceMobile";
 import Heroheader from "../components/hero&header/hero&header";
 import { Hero } from "../components/hero/hero";
 
@@ -106,21 +104,7 @@ async function getBoockaDemoData() {
   }
 }
 
-async function getExpirienceData() {
-  const result = await client.getEntry('2IwZXaqfDiSLilmLJnTMdB')
-  return {
-    title: result.fields.title,
-    field1title : result.fields.field1title,
-    field1answer : result.fields.field1answer,
-    field2title : result.fields.field2title,
-    field2answer : result.fields.field2answer,
 
-    field3title : result.fields.field3title,
-    field3answer : result.fields.field3answer,
-    field4title : result.fields.field4title,
-    field4answer : result.fields.field4answer
-  }
-}
 
 async function getFooterData() {
   const result = await client.getEntry('ESZNxKud90M5dxGd88Oxu')
@@ -139,7 +123,6 @@ export default async function Home() {
   const cardData = await getLiveCardData();
   const stockyData = await getStickyData();
   const boockAdemoData = await getBoockaDemoData();
-  const expirienceData =await getExpirienceData();
   const footerData = await getFooterData();
   return (
     <>
@@ -148,8 +131,6 @@ export default async function Home() {
           <Hero {...heroData} />
         </div>
         <DinamicText {...liveTextData}/>
-        <Experience {...expirienceData} className={styles.xpDesktop}/>
-        <ExperienceMobile {...expirienceData} className={styles.xpMobile}/>
         <Cards {...cardData}/>
         <Carousel/>
         <br />
