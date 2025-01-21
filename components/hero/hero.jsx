@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useRef, useEffect } from "react"
 import Image from 'next/image';
 import { Mont, allura } from '../../app/fonts/fonts';
 import styles from './hero.module.css';
@@ -10,9 +10,29 @@ import Header from '../header';
 
 
 export const Hero = (props) => {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.75 // Adjust playback speed if desired
+    }
+  }, [])
+  
   return (
-    <div className={styles.mobileBg}>        
-          <Header/>
+    <>
+
+    <div className={styles.mobileBg}>    
+   <video ref={videoRef} autoPlay loop muted playsInline className={styles.backgroundVideo}>
+        <source
+          src="https://s3-figma-videos-production-sig.figma.com/video/1107297411132669732/TEAM/07ab/a3ec/-f987-4859-97b1-24c998932b25?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dmX0anNtM-rKwZLDDBUnlcfkOGTMCyltrXO2ZpzZpKkiKxJdHVUR2gzZRP-VcG05bkCId617KWIMfuL2Ii0zIKMScSGqyRZG10hY20vnCQi99E~dNBb7~EQNmIhRvNYRfRwPPxXpeI8oBzronm60AlvDkgpZjOTs3pOoZ0kvRLI87u8YaxYdbXA4qH3rE75Db2EHmq8YCQ8YV4HH~Daef5pRFaQdCvnHVbpE9rS3oxGYfWGXwJsB5bnwDVpNVdg2OLUQZh29hTaLD5KeuzDES067Ah6vc0Z-qwBe7VxATN3nOB5xyyH~8JkatCkusZh6sb7lbkUlZmxgb6~fctYS7A__"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div className={styles.gradientOverlay}></div>
+
+      <Header/>
+
       <div className={styles.heroTwoColumns}>
         <div className={styles.left_colum_father}>
           <div className={styles.heroText}>
@@ -68,9 +88,6 @@ export const Hero = (props) => {
             <div className={styles.line}></div>
           </div>
         </div>
-        <div className={styles.imageFather}>
-          <Image src="/assets/imgs/man.png" width={709} height={877} alt="Man Illustration" />
-        </div>
       </div>
       <div className={stylesCarousel.heroCarousel}>      
         <CarouselHero></CarouselHero>
@@ -80,6 +97,7 @@ export const Hero = (props) => {
         <Image width={20} height={20} src="/assets/imgs/down-arrow1.png" alt="Down Arrow" />
       </div>
       </div>
+      </>
   );
 };
 
