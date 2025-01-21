@@ -15,7 +15,8 @@ export default function Header() {
     <div id='header' className={styles['header-div']}>
       <a href="" className={`${styles.name} ${allura.className}`}>Ariel Rajmaliuk</a>
       <p className={`${Mont.className} ${styles.position}`} >CEO @happyagencies & Fractional <span className={styles.positionSpan}>CTO/CMO</span></p>
+      <div className={` ${styles.buttonBorder}`}>
       <a className={`${styles.consultation} ${Mont.className}`} href="#book-a-demo" onClick={handleScrollToDemo}>Schedule a consultation</a>
-    </div>
+    </div>    </div>
   );
 }

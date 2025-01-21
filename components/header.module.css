@@ -10,14 +10,24 @@
     color: #ffffff;
 }
 .consultation {
-    color: #0363FF;
-    font-size: 18px;
-    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
     line-height: normal;
     text-align: right;
-    text-decoration: underline;
-    text-underline-offset: 4.5px;
 }
+
+.buttonBorder {
+    border: 1px solid #FFFFFF; 
+    width: 250px; 
+    height: 45px;
+    border-radius: 22.5px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: transparent;
+}
+
 .position{
     font-weight: 300;
     font-size: 14px;
@@ -42,6 +52,9 @@ padding-right: 70px;   }
     .consultation{
         display: none;
         color: #ffffff;
+    }
+    .buttonBorder{
+        display: none;
     }
     .position{
         display:block;
