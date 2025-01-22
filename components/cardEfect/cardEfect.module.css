@@ -173,7 +173,7 @@
     
   @media (max-width: 400px) {
     .contenedor{
-        height: 230vh;
+        height: 235vh;
     }
     .expandedMobile .card1 { transform: translateY(220px); }
     .expandedMobile .card2 { transform: translateY(590px); } /* 370px de distancia con card1 */
