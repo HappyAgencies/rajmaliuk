@@ -22,7 +22,7 @@ export default function CardEfect() {
         }`}
         onClick={() => setExpanded(!expanded)}
       >
-        {[1, 2, 3, 4].map((num) => (
+        {[4, 3, 2, 1].map((num) => (
           <div key={num} className={`${styles.card} ${styles[`card${num}`]}`}>
             <span className={styles.cardNumber}>0{num}</span>
             <h4 className={styles.cardTitle}>Areas of Expertise</h4>
