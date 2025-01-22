@@ -9,7 +9,6 @@
     align-items: center;
 }
 
-/* 🟢 TÍTULO: SE MANTIENE FIJO */
 .titlecontainer {
     max-width: 1084px;
     max-height: 130px;
@@ -27,7 +26,6 @@
     
 }
 
-/* 🔵 CONTENEDOR DE TARJETAS */
 .cardsContainer {
     position: relative;
     width: 528px;
@@ -36,10 +34,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-top: 50px; /* Separar un poco de la sección del título */
+    margin-top: 50px; 
 }
 
-/* 🔴 ESTILOS DE TARJETAS */
 .card {
     position: absolute;
     width: 528px;
@@ -55,19 +52,16 @@
     margin-top: 50px;
 }
 
-/* 🔴 POSICIÓN INICIAL: APILADAS */
 .card1 { transform: translateY(10px); }
 .card2 { transform: translateY(20px); }
 .card3 { transform: translateY(30px); }
 .card4 { transform: translateY(40px); }
 
-/* 🟢 POSICIÓN AL EXPANDIR: 2X2 */
 .expanded .card1 { transform: translate(-280px, -10px); }
 .expanded .card2 { transform: translate(280px, -10px); }
 .expanded .card3 { transform: translate(-280px, 260px); }
 .expanded .card4 { transform: translate(280px, 260px); }
 
-/* ESTILOS DEL CONTENIDO DE LA TARJETA */
 .cardNumber {
     font-size: 18px;
     font-weight: 500;
