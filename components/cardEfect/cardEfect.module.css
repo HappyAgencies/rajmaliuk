@@ -156,7 +156,7 @@
       
   @media (max-width: 500px) {
     .contenedor{
-        height: 195vh;
+        height: 205vh;
         
     }
     .card1 { transform: translateY(210px); }
