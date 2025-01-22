@@ -129,7 +129,7 @@
   
   @media (max-width: 850px) {
     .contenedor{
-        height: 120vh;
+        height: 135vh;
     }
 
    
@@ -139,7 +139,7 @@
         font-size: 30px;
     }
     .contenedor{
-        height: 140vh;
+        height: 155vh;
     }
     .card1 { transform: translateY(150px); }
     .card2 { transform: translateY(140px); }
@@ -156,7 +156,7 @@
       
   @media (max-width: 500px) {
     .contenedor{
-        height: 180vh;
+        height: 195vh;
         
     }
     .card1 { transform: translateY(210px); }
@@ -173,7 +173,7 @@
     
   @media (max-width: 400px) {
     .contenedor{
-        height: 215vh;
+        height: 230vh;
     }
     .expandedMobile .card1 { transform: translateY(220px); }
     .expandedMobile .card2 { transform: translateY(590px); } /* 370px de distancia con card1 */
@@ -184,7 +184,7 @@
 
   @media (max-width: 377px) {
     .contenedor{
-        height: 275vh;
+        height: 300vh;
     }
     .expandedMobile .card1 { transform: translateY(210px); }
     .expandedMobile .card2 { transform: translateY(590px); } /* 380px de distancia con card1 */
