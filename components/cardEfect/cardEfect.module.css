@@ -22,6 +22,7 @@
     font-weight: 500;
     line-height: 65px;
     text-align: center;
+    color: #FFFFFF;
     
     
 }
@@ -80,10 +81,14 @@
     line-height: 30px;
     margin-bottom: 25px;
     margin-top: 8px;
+    color: #FFFFFF;
+
 }
 
 .cardParagraph {
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
+    color: #FFFFFF;
+
 }
